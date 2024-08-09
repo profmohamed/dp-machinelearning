@@ -39,8 +39,11 @@ with st.sidebar:
           'gender' : gender}
   input_df = pd.DataFrame(data, index=[0])
   input_penguins = pd.concat([input_df, x], axis=0)
-  
-input_penguins
+with st.expander('Input features')
+  st.write('**Input penguin**')
+  input_df
+  st.write('**Combined penguins data **')
+  input_penguins
 
 
 
