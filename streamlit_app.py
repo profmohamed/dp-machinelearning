@@ -89,22 +89,22 @@ df_prediction_proba.columns = ['Adelie','Chinstrap','Gentoo']
 # Display Predicted species
 st.subheader('Predicted Species')
 st.dataframe(df_prediction_proba,
-            column_config = {
-              'Adelie': st.column_config.PregressColumn(
+            column_config={
+              'Adelie': st.column_config.ProgressColumn(
                 'Adelie',
                 format='%f',
                 width = 'medium',
                 min_value = 0,
                 max_value = 1
               ),
-              'Chinstrap': st.column_config.PregressColumn(
+              'Chinstrap': st.column_config.ProgressColumn(
                 'Chinstrap',
                 format='%f',
                 width = 'medium',
                 min_value = 0,
                 max_value = 1
               ),
-              'Gentoo': st.column_config.PregressColumn(
+              'Gentoo': st.column_config.ProgressColumn(
                 'Gentoo',
                 format='%f',
                 width = 'medium',
