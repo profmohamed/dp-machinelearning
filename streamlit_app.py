@@ -22,4 +22,4 @@ with st.expander('Data Visualization'):
 
 # Data preparations
 with st.sidebar():
-  str.header('Input feature')
+  st.header('Input features')
