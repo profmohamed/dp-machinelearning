@@ -88,8 +88,8 @@ df_prediction_proba.columns = ['Adelie','Chinstrap','Gentoo']
 
 # Display Predicted species
 st.subheader('Predicted Species')
-st.dataframe(df_prediction_proba,
-            column_config={
+st.dataframe(df_prediction_proba,  
+             column_config={
               'Adelie': st.column_config.ProgressColumn(
                 'Adelie',
                 format='%f',
