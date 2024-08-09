@@ -31,13 +31,14 @@ with st.sidebar:
   gender = st.selectbox('Gender',('male', 'female'))
 
   # create a data frame for the input feasures
-  data  = {'island', island,
-          'bill_length_mm', bill_length_mm,
-          'bill_depth_mm', bill_depth_mm,
-          'flipper_lenght_mm', flipper_lenght_mm,
-          'body_mass_g', body_mass_g,
+  data  = {'island': island,
+          'bill_length_mm': bill_length_mm,
+          'bill_depth_mm': bill_depth_mm,
+          'flipper_lenght_mm' : flipper_lenght_mm,
+          'body_mass_g' : body_mass_g,
           'gender', gender}
   input_df = pd.DataFrame(data, index=[0])
+  
 input_df
 
 
