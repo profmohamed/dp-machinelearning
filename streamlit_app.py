@@ -14,3 +14,6 @@ with st.expander('Data'):
   st.write('**y**')
   y = df.species
   y
+
+with st.expander('Data Visualization'):
+  st.scater_char(data=df, x ='bill_lenth_mm', y='body_mass_g', color= 'species')
