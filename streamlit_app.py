@@ -23,3 +23,4 @@ with st.expander('Data Visualization'):
 # Data preparations
 with st.sidebar():
   st.header('Input features')
+  st.footer(' Made with love by mohamed salem ')
